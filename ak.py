@@ -1,13 +1,21 @@
 import csv
 import matplotlib.pyplot as plt
-f = open('data.csv')
-data = csv.reader(f)
+
+
+f = open('data.CSV')
+data = CSV.reader(f)
 next(data)
-result = []
+high = []
+low = []
 
 for row in data:
-    if row[-1] !='':
-        result.append(float(row[-1]))
+        if row[-1]!=''and row [-2]
+            if 23.03 <= int(row[0].split('~')[0]):
+                    if row [0].split('-')[1] == '02' and row[0].split('-')
+[2] == '22' :
 
-plt.plot(resultn,'r')
+            high.appand(float(row[-1]))
+            low.append(float(row[-2]))
+plt.plot(high, 'hotpink')
+plt.plot(low, 'skyblue')
 plt.show()
